@@ -1,4 +1,4 @@
-let array = [12, 10, 9, 14, 1, 3, 5, 11, 6, 15, 16, 13, 2, 4, 8, 7]
+// let array = [12, 10, 9, 14, 1, 3, 5, 11, 6, 15, 16, 13, 2, 4, 8, 7]
 
 function findMinAndRemoveSorted(array){
     return array.shift()
@@ -23,7 +23,7 @@ function mergeSort(array){
     let sorted
 
     if (array.length < 2){
-        return sorted
+        return array
     } else {
         sorted = merge(mergeSort(firstHalf), mergeSort(secondHalf))
     }
@@ -31,4 +31,4 @@ function mergeSort(array){
     // console.log(sorted)
 }
 
-mergeSort(array)
+// mergeSort(array)
